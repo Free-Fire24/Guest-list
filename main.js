@@ -8,7 +8,7 @@ function submit()
    
     console.log(name_of_guest_array);
 
-    document.getElementById("display").innerHTML=name_of_guest_array
+    document.getElementById("display").innerHTML=name_of_guest_array;
  
 }
 
@@ -46,8 +46,8 @@ function search() {
     var count = 0;
     var dis;
  var search_name = document.getElementById("Name_of_guest1").value;
-    for(var s=0 ; s<length ; s++) {
-        if(search_name = name_of_guest_array[s]) {
+    for(var s=0 ; s<name_of_guest_array.length ; s++) {
+        if(search_name == name_of_guest_array[s]) {
            count++;
            
         }
